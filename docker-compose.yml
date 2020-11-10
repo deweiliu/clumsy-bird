@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  clumsy-bird:
+    image: deweiliu/clumsy-bird
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 80:80
+    container_name: clumsy-bird-container
